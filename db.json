@@ -1,0 +1,22 @@
+{
+  "alunos": [
+    {"cod": 1,"nome": "Alberto","ano": 1},
+    {"cod": 2,"nome": "Benicio","ano": 2},
+    {"cod": 3,"nome": "Carla","ano": 3},
+    {"cod": 4,"nome": "Daniel","ano": 1},
+    {"cod": 5,"nome": "Eduardo","ano": 2},
+    {"cod": 6,"nome": "Fernanda","ano": 3}
+
+  ],
+  "turmas": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+

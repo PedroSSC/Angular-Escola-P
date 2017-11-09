@@ -1,0 +1,41 @@
+<h1>Turma</h1>
+<h3>{{this.sTurma.disciplina}} / {{this.sTurma.ano}}</h3>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col" width="80">Turma</th>
+        <th scope="col"width="200">Disciplina</th>
+        <th scope="col" width="50">Cod</th>
+        <th scope="col" width="50">Aluno</th>
+        <th scope="col" width="50">Freq</th>
+        <th scope="col" width="50">N1</th>
+        <th scope="col" width="50">N2</th>
+        <th scope="col" width="50">N3</th>
+        <th scope="col" width="50">N4</th>
+        <th scope="col" width="50">Média</th>
+        <th scope="col" width="50">Situação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let turmaAluno of turmaAlunos">
+        <th scope="row">{{turmaAluno.codT}}</th>
+        <td>{{buscaTurma(turmaAluno.codT)}}</td>
+        <td>{{turmaAluno.codA}}</td>
+        <td>{{buscaAluno(turmaAluno.codA)}}</td>
+        <td>{{turmaAluno.freq}}</td>
+        <td>{{turmaAluno.n1}}</td>
+        <td>{{turmaAluno.n2}}</td>
+        <td>{{turmaAluno.n3}}</td>
+        <td>{{turmaAluno.n4}}</td>
+        <td>{{turmaAluno.media}}</td>
+        <td>0</td>
+        <td>
+          <button class="btn btn-danger btn-sm">
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
